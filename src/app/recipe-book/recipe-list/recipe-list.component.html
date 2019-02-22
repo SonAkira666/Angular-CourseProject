@@ -1,1 +1,15 @@
-<p>Here goes the list</p>
+<a href="#" class="list-group-item clearfix">
+	<div class="float-left">
+		<div class="col-12">
+			<div class="row">
+				<h4 class="list-group-item-heading">{{ this.rcp.name }}</h4>
+			</div>
+			<div class="row">
+				<p>{{ this.rcp.description }}</p>
+			</div>
+		</div>
+	</div>
+	<span class="float-right">
+		<img src="{{ this.rcp.imagePath }}" alt="" class="img-responsive" style="max-height: 50px;">
+	</span>
+</a>

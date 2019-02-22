@@ -1,13 +1,14 @@
-<app-header></app-header>
+<app-header (showSections)='this.onNavigation($event)'></app-header>
 
 <div class="container">
-	<div class="row">
-		<div class="col-6">
-			<h3>Shopping List</h3>
-			<app-shopping-list></app-shopping-list>
-		</div>
-		<div class="col-6">
+	<div class="row" *ngIf='this.viewRecipes'>
+		<div class="col-12">
 			<app-recipe-book></app-recipe-book>
+		</div>
+	</div>
+	<div class="row" *ngIf='this.viewShoppingList'>
+		<div class="col-12">
+			<app-shopping-list></app-shopping-list>
 		</div>
 	</div>
 </div>

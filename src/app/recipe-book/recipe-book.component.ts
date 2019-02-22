@@ -6,5 +6,5 @@ import { Recipe } from "./recipe";
 	templateUrl: "./recipe-book.component.html"
 })
 export class RecipeBookComponent {
-	recipe: Recipe[] = [];
+	recipe: Recipe[] = [new Recipe('Parmigiana' , 'Na bella porcata.' , 'https://www.ricettedellanonna.net/wp-content/uploads/2016/05/ricetta-parmigiana-alle-melanzane.jpg') , new Recipe('Parmigiana' , 'Na bella porcata.' , 'https://www.ricettedellanonna.net/wp-content/uploads/2016/05/ricetta-parmigiana-alle-melanzane.jpg')];
 }

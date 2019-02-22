@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CourseProject';
+	viewRecipes: boolean = true;
+	viewShoppingList: boolean = false;
+
+	onNavigation(headerData: {viewRecipes: boolean, viewShoppingList: boolean}) {
+		this.viewRecipes = headerData.viewRecipes;
+		this.viewShoppingList = headerData.viewShoppingList;
+	}
 }

@@ -2,9 +2,9 @@
 <div class="row">
 	<div class="col-6">
 		<button class="btn btn-success">New Recipe</button>
-		<app-recipe-list *ngFor="let r of recipe" [rcp]='r'></app-recipe-list>
+		<app-recipe-list *ngFor="let r of recipe" [rcp]='r' (click)='setActiveRecipe(r)'></app-recipe-list>
 	</div>
 	<div class="col-6">
-		<div class="list-group-item-text"><app-recipe-detail></app-recipe-detail></div>
+		<div class="list-group-item-text"><app-recipe-detail [rcp]='this.activeRecipe'></app-recipe-detail></div>
 	</div>
 </div>
